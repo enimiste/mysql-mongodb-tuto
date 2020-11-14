@@ -1,11 +1,8 @@
 package com.example.mysqlmongodb.backend.entity;
 
-import com.example.mysqlmongodb.backend.mongo.Hotel;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "USERS")
