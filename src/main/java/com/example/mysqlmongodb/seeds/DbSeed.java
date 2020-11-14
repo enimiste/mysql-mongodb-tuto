@@ -75,7 +75,7 @@ public class DbSeed implements CommandLineRunner {
                 .build();
 
         Hotel ibis = Hotel.builder()
-                .pricePerNight(80)
+                .pricePerNight(120)
                 .address(
                         Address.builder()
                                 .city("Rabat")
@@ -91,6 +91,23 @@ public class DbSeed implements CommandLineRunner {
                 ))
                 .build();
 
-        hotelRepository.saveAll(asList(sofitel, ibis));
+        Hotel kenzi = Hotel.builder()
+                .pricePerNight(40)
+                .address(
+                        Address.builder()
+                                .city("Errachidia")
+                                .country("Maroc")
+                                .build()
+                )
+                .reviews(singletonList(
+                        Reviews.builder()
+                                .rating(3)
+                                .comment("Médiocre")
+                                .approved(false)
+                                .build()
+                ))
+                .build();
+
+        hotelRepository.saveAll(asList(sofitel, ibis, kenzi));
     }
 }
