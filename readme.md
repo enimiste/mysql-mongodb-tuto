@@ -11,6 +11,7 @@
 - Never make relations between mongodb documents and JPA entities.
 - Linking should be done using Ids
 - Maybe we can save extras data for reading or caching purposes
+- You can use `@Query("")` annotation on mongo repositories. But only built in mongodb query syntax can be used and not the JPA one.
 
 
 ### Maven configuration to use the QueryDSl (Keep the versions)
