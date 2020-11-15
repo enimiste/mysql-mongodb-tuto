@@ -1,4 +1,11 @@
 ## Using Mysql and Mongodb in the same project
+### Project webography :
+- [Romanian Coder source code on github](https://github.com/dangeabunea/RomanianCoderExamples)
+- [Romanian Coder youtube channel](https://www.youtube.com/watch?v=Hu-cyytqfp8)
+- [QueryDsl website](http://www.querydsl.com/)
+- Stackoverflow
+
+
 ### Technologies :
 - Java 11
 - Spring boot
