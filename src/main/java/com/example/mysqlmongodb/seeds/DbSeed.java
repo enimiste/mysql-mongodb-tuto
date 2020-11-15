@@ -65,11 +65,16 @@ public class DbSeed implements CommandLineRunner {
                                 .approved(true)
                                 .build()
                 ))
-                .reservations(singletonList(
+                .reservations(asList(
                         Reservation.builder()
                                 .userId(admin.getId())
                                 .date(LocalDate.now().plusDays(10))
                                 .nbrPersonnes(1)
+                                .build(),
+                        Reservation.builder()
+                                .userId(admin.getId())
+                                .date(LocalDate.now().plusDays(1))
+                                .nbrPersonnes(3)
                                 .build()
                 ))
                 .build();
@@ -104,6 +109,18 @@ public class DbSeed implements CommandLineRunner {
                                 .rating(3)
                                 .comment("Médiocre")
                                 .approved(false)
+                                .build()
+                ))
+                .reservations(asList(
+                        Reservation.builder()
+                                .userId(admin.getId())
+                                .date(LocalDate.now().plusDays(4))
+                                .nbrPersonnes(3)
+                                .build(),
+                        Reservation.builder()
+                                .userId(admin.getId())
+                                .date(LocalDate.now().plusDays(4))
+                                .nbrPersonnes(2)
                                 .build()
                 ))
                 .build();

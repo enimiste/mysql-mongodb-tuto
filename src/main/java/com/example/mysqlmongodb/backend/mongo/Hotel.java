@@ -1,19 +1,16 @@
 package com.example.mysqlmongodb.backend.mongo;
 
-import com.example.mysqlmongodb.backend.entity.User;
 import com.example.mysqlmongodb.backend.mongo.embeddables.Address;
 import com.example.mysqlmongodb.backend.mongo.embeddables.Reservation;
 import com.example.mysqlmongodb.backend.mongo.embeddables.Reviews;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import java.util.ArrayList;
 import java.util.List;
 
